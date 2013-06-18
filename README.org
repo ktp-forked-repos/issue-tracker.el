@@ -1,0 +1,8 @@
+* issue-tracker.el (current version 0.0.1)
+Create an issue id like "myproject-232" based on increment of current text under cursor.
+
+Say current text under cursor is "myproject-9", the issue id "myproject-10" will be created.
+
+The new issue id will pushed into the kill-ring and OS clipboard. It simulate the way [[www.atlassian.com/software/jira][jira]] creates the issue id.
+
+That's the minimum feature I will implement.
