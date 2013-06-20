@@ -1,4 +1,4 @@
-* issue-tracker.el (current version 0.0.1)
+* issue-tracker (current version 0.0.1)
 Create an issue id from current issue id. Current issue id could be any text under cursor in the Emacs buffer.
 
 For example, if current issue id is "myproject-9", the new issue id "myproject-10" will be created.
@@ -8,7 +8,7 @@ The new issue id will pushed into the kill-ring and OS clipboard.
 That's the minimum feature I will implement.
 
 * Install
-issue-tracker.el is already uploaded to [[http://marmalade-repo.org/]]. So the best way to install it is using Emacs' package manager.
+issue-tracker is already uploaded to [[http://marmalade-repo.org/]]. So the best way to install it is using Emacs' package manager.
 
 * Set up
 You need install `xsel` under Linux if you want to copy issue id into system clipboard automatically.
