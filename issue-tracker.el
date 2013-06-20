@@ -36,11 +36,14 @@
     (goto-char (+ (point) 1))
     (setq b (point))
     (re-search-forward "[ \t\r\n]" nil t)
-    (message "c=%c" (char-after (point)))
+    ;; (message "c=%c" (char-after (point)))
     (setq e (- (point) 1))
     ;; restore the position
     (goto-char old-position)
-    (message "b=%d e=%d" b e)
+    ;; (message "b=%d e=%d" b e)
+    (if (> b e)
+        (setq e (buffer-end 1))
+        )
     (list b e)
     ))
 
@@ -53,7 +56,7 @@
         nid
         num)
     (setq id (buffer-substring (car bounds) (nth 1 bounds)))
-    (message "id=%s" id)
+    ;; (message "id=%s" id)
     ;; get symbol under cursor
     (if (string-match "^\\(.*[^0-9]\\)\\([0-9]+\\)$" id)
         (progn
