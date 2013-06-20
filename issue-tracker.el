@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2013 Chen Bin
 ;; Author: Chen Bin <chenbin.sh@gmail.com>
-;; URL: http://github.com/redguardtoo/issue-tracker
+;; URL: http://github.com/redguardtoo/issue-tracker.el
 ;; Keywords: issue tracker bug jira
 ;; Version: 0.0.1
 
